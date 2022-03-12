@@ -2,25 +2,28 @@ import React, { useState} from 'react'
 
 import '../index.css'
 
+
 export const AddCategory = ({setCategories}) => {
 
-    const [inputValue, setInputValue] = useState('Buscar títulos...')
+  const [inputValue, setInputValue] = useState([''])
+
+
     const handleInputChange = (e) => {
-        setInputValue(e.target.value);
+        setInputValue(e.target.value);  
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
         //Validación:
         if (inputValue.trim().length > 2) {
-            setCategories (cats => [inputValue, ...cats]);
+            setCategories (cats => [inputValue]);
             setInputValue('');
         }
     }
 
     return (
         <form onSubmit={handleSubmit}>
-            <input 
+            <input
                 type="text"
                 value={inputValue}
                 onChange={handleInputChange}

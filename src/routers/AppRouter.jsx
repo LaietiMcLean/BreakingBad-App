@@ -1,8 +1,8 @@
 import React from 'react'
 import { Routes, Route} from "react-router-dom";
-import { Books } from '../components/books/Books';
+import { Characters } from '../components/characters/Characters';
 import { Home } from '../components/home/Home';
-import { NytBestSellers } from '../components/nyt/NytBestSellers';
+import { BreakingBad } from '../components/breakingbad/BreakingBad';
 import { Navbar } from '../ui/Navbar';
 
 export const AppRouter = () => {
@@ -12,8 +12,8 @@ export const AppRouter = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Home" element={<Home />} />
-            <Route path="/Books" element={<Books />} />
-            <Route path="/nyt-bestsellers" element={<NytBestSellers />} />
+            <Route path="/Characters" element={<Characters />} />
+            <Route path="/breaking-bad" element={<BreakingBad />} />
         </Routes>
     </div>
   )

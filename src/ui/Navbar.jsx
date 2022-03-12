@@ -1,18 +1,17 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { AddCategory } from './AddCategory'
 
-import '../ui/navbar.css'
 
 export const Navbar = () => {
+
     return (
         <>
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
             <Link 
                 className="navbar-brand" 
-                to="/nyt-bestsellers"
+                to="/breaking-bad"
             >
-                NYT Best Sellers
+                Breaking Bad
             </Link>
 
             <div className="navbar-collapse">
@@ -29,9 +28,9 @@ export const Navbar = () => {
                     <NavLink 
                         className="nav-item nav-link" 
                         exact="true"
-                        to="/Books"
+                        to="/Characters"
                     >
-                        Books
+                        Characters
                     </NavLink>
                 </div>
             </div>
