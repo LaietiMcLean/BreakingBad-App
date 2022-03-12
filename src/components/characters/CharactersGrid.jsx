@@ -28,8 +28,7 @@ export const CharactersGrid = ({category}) => {
   }
 
   return (
-    <div>
-    <h3>{category}</h3>
+    <div className="row rows-cols-1 row-cols-md-3 g-3">
         {
             images.map( item => (
                 <CharactersGridItem 
