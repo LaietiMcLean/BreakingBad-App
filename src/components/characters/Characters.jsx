@@ -7,9 +7,9 @@ export const Characters = () => {
 
   const [categories, setCategories] = useState(['']);
 
-  const handleAdd = () => {
+  const handleAdd = (e) => {
     setCategories(
-      [categories],
+      [e.target.value],
     )
     }
 
@@ -20,10 +20,10 @@ export const Characters = () => {
         <p>La finalidad de esta página es realizar la búsqueda de personajes de Breaking Bad por su nombre y devolver resultados</p>
             <AddCategory setCategories={setCategories}/>
             <hr />
-              <button
+              {/*<button
                 className="btn"
                 onClick={handleAdd}
-              >Submit</button>
+              >Submit</button>*/}
                 {categories.map(category=> (
               <CharactersGrid
                 key={category}

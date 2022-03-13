@@ -8,7 +8,7 @@ export const AddCategory = ({setCategories}) => {
   const [inputValue, setInputValue] = useState([''])
 
 
-    const handleInputChange = (e) => {
+  const handleInputChange = (e) => {
         setInputValue(e.target.value);  
     }
 
@@ -28,6 +28,13 @@ export const AddCategory = ({setCategories}) => {
                 value={inputValue}
                 onChange={handleInputChange}
             />
+            <span className="container-btn-submit">
+            <button
+                className="btn btn-submit"
+                onClick={handleSubmit}
+              >Submit</button>
+            </span>
+
        </form>
     )
 }
