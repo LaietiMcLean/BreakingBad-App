@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from 'react'
-import { getCharacters } from '../../helpers/getCharacters';
+import { useFetchCharacters } from '../../hooks/useFetchCharacters';
 import { CharactersGridItem } from './CharactersGridItem';
 
 export const CharactersGrid = ({category}) => {
 
-  const [images, setImages] = useState([])
+  const {data: images, loading} = useFetchCharacters(category);
 
-  useEffect( () => {
-      getCharacters(category)
-        .then(setImages)
-  }, [category])
 
   return (
+    <>
+    {loading ? <p>Loading...</p> : null}
+
     <div className="row rows-cols-1 row-cols-md-3 g-3">
         {
             images.map( item => (
@@ -22,5 +20,6 @@ export const CharactersGrid = ({category}) => {
             ))
         }
     </div>
+    </>
   )
 }
