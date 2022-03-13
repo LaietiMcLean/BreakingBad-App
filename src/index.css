@@ -20,8 +20,9 @@ html, body {
 
 }
 
-h3.card-title {
+h6.card-title {
   margin: 6px;
+  padding: 5px;
   align-self: center;
   box-sizing: border-box;
 }
@@ -35,7 +36,26 @@ a.navbar-brand {
 
 a.nav-item {
   color: white;
+  text-decoration: none;
   font-family: 'Rubik', sans-serif;
+  transition: color .15s ease-in-out;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+
+a.nav-item:hover {
+  color: #a0f83b;
+  text-decoration: none;
+}
+
+nav-link {
+  color: white;
+}
+
+a::selection {
+  color: white;
+  text-decoration: none;
 }
 
 main {
@@ -63,7 +83,6 @@ img {
   box-shadow: 1px 2px 10px grey;
   filter:saturate(70%);
   filter: brightness(100%);
-  justify-content: center;
 
 }
 
@@ -129,3 +148,6 @@ input:focus {
   justify-content: center;
 }
 
+.card {
+  align-items: center;
+}

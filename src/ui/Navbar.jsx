@@ -19,7 +19,7 @@ export const Navbar = () => {
             <div className="navbar-collapse">
                 <div className="navbar-nav">
                     <NavLink 
-                        className="nav-item nav-link" 
+                        className="nav-item" 
                         exact="true"
                         to="/Characters"
                     >
@@ -30,7 +30,7 @@ export const Navbar = () => {
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul className="navbar-nav ml-auto">
                     <NavLink 
-                        className="nav-item nav-link" 
+                        className="nav-item" 
                         exact="true"
                         to="/Login"
                     >
