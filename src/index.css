@@ -68,11 +68,18 @@ a.nav-item:hover {
   text-decoration: none;
 }
 
+a.nav-item:active {
+  color: white;
+  text-decoration: none;
+}
+
+
 nav-link {
   color: white;
 }
 
-a::selection {
+
+a:active {
   color: white;
   text-decoration: none;
 }
@@ -100,7 +107,7 @@ main {
 }
 
 .container-section {
-  position: absolute;
+  position: relative;
   border-bottom: 1px dotted #1F6032;
   margin: 0 auto;
   padding: 30px;
