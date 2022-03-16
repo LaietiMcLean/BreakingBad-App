@@ -1,0 +1,25 @@
+.container-homepage {
+    background: rgba(233, 211, 12, 0.877);
+
+}
+
+.section1-homepage {
+    display: flex;
+    justify-content: center;
+}
+
+.section1-sub-homepage {
+    display:flex;
+    justify-content: center;
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight:bolder;
+}

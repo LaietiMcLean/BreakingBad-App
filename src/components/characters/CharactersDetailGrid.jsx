@@ -17,3 +17,4 @@ export const CharactersDetailsGrid = ({id}) => {
     </>
   )
 }
+//TODO: quitar componente

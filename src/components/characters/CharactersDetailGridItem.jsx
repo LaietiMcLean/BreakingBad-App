@@ -15,12 +15,12 @@ export const CharactersDetailGridItem = ({id, title, url}) => {
           <span className="row">
             <p>{id}</p>
             <img src={url} className="card-img-top" alt={title} style={{ width: '270px', height: '250px'}}></img>
+            <div className="card body">
             <h6 className="card-title">{title}</h6>
-
+            </div>
           </span>
         </span>
       </span>
     </div>
-  
     )
   }
