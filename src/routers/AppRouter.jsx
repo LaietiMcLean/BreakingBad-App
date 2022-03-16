@@ -8,6 +8,7 @@ import { Login } from '../components/Login/Login';
 
 import { DashboardRoutes } from './DashboardRoutes';
 import { PrivateRoute } from './PrivateRoute';
+import { Footer } from '../ui/footer';
 
 export const AppRouter = () => {
   return (
@@ -24,6 +25,7 @@ export const AppRouter = () => {
               </PrivateRoute>} 
           />
         </Routes>
+        <Footer />
     </>
   )
 }

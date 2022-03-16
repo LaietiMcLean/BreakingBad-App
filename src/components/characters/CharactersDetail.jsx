@@ -22,22 +22,32 @@ export const CharactersDetail = () => {
   return (
     <div className="container">
     <div className="container-section">
-    <h3>{characters.name}</h3>
-    <img src={characters.img} className="card-img-top" alt={characters.name} style={{ width: '270px', height: '250px'}}></img>
-    <p>Birthday: {characters.birthday}</p>
-    <p>Nickname: {characters.nickname}</p>
-    {/*<p>Occupation: {characters.occupation}</p>*/}
-    <p>Occupation: 
-    {
-      occ.map(item => (
-        <li key={item.occ}
-        >{item}</li>
-      ))
-    }
-    </p>
-    <p>Status: {characters.status}</p>
+      <div className="card-detail">
 
-    </div>
+        <div className="card-title-item">
+          <h3>{characters.name}</h3>
+        </div>  
+
+          <div className="card-img">
+            <img src={characters.img} className="card-img-top" alt={characters.name} style={{ width: '200px', height: '250px'}}></img>
+          </div>
+          
+          <h4 className="text-details">Birthday:</h4> <p>{characters.birthday}</p>
+          <h4 className="text-details">Nickname:</h4> <p>{characters.nickname}</p>
+          <h4 className="text-details">Occupation:</h4> 
+          <p>
+              {
+                occ.map(item => (
+                <li key={item.occ}
+                >{item}</li>
+                ))
+              }
+          </p>
+          <h4 className="text-details">Status:</h4> <p>{characters.status}</p>
+          <h4 className="text-details">Portrayed:</h4> <p>{characters.portrayed}</p>
+
+      </div>
+  </div>
   </div>
   )
 

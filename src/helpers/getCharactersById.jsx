@@ -5,10 +5,6 @@ import { useState } from "react";
 export const Characterss = (CharactersGridItem) => {
 
   const {id} = CharactersGridItem;
-    //const arrURL = window.location.href.split("/")
-    //const idCharacter = arrURL[arrURL.length -1]
-    /*idCharacter = id;
-    console.log(id);*/
 
     const [idCharacter, setIdCharacter] = useState({id})
 

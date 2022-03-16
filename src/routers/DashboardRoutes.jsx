@@ -5,6 +5,7 @@ import { Navbar } from '../ui/Navbar'
 
 import { Characters } from '../components/characters/Characters'
 import { CharactersDetail } from '../components/characters/CharactersDetail'
+import { Footer } from '../ui/footer'
 
 export const DashboardRoutes = () => {
   return (

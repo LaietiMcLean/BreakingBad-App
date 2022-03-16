@@ -11,8 +11,9 @@ export const Characters = () => {
     <div className="container">
       <div className="container-section">
       <div className="prueba-seccion">
-        <h1>Esta es la página de Characters</h1>
-        <p>La finalidad de esta página es realizar la búsqueda de personajes de Breaking Bad por su nombre y devolver resultados</p>
+        <h1>Look for your character</h1>
+        <h4>And click below to see details</h4>
+    
             <AddCategory setCategories={setCategories}/>
       </div>
          

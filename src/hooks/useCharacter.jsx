@@ -14,7 +14,6 @@ export const useCharacter = (id) => {
     }
 
     useEffect(() => {
-        // Después de que el componente se monta, se ejecuta este callback
         getCharacters(id)
         .then((resp) => resp.json())
         .then(([body]) => {

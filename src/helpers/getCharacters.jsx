@@ -14,7 +14,8 @@ export const getCharacters = async (category) => {
           nickname: item.nickname,
           bday: item.birthay,
           occupation: item.occupation,
-          status: item.status 
+          status: item.status,
+          portrayed: item.portrayed
       }
   })
     return characters;
